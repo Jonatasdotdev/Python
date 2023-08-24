@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1013</width>
+    <height>677</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">*{
+
+border:none;
+}
+Qlabel{
+ color: rgb(255 , 255 , 255);
+
+}</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="left_container">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border-style: none;
+}
+
+/* Define a cor quando o mouse estiver em cima do QFrame */
+QFrame:hover {
+    background-color: black;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QFrame */
+QFrame QLabel {
+    color: black;
+    padding: 5px 10px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #ff55ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #ff55ff; /* Azul */
+    color: #ff55ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #ff55ff; /* Azul */
+    color: #ff55ff; /* Azul */
+}</string>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Moda&amp;amp;Estilo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #1e90ff; 
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+QPushButton:hover {
+    background-color: white;
+    color: #aa0000;
+}
+QFrame {
+    background-color:#ffaaff; /* Preto */
+}
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QToolBox" name="toolBox">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">/* Define a cor dos botões de página quando não selecionados */
+QToolBox::tab {
+    background-color: #ff55ff;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+/* Define a cor dos botões de página quando selecionados */
+QToolBox::tab:selected {
+    background-color: white;
+    color: #ff55ff;
+    border: 1px solid #ff55ff;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+/* Define a cor do frame */
+QFrame {
+    background-color: #ffaaff;
+}
+/* Define as cores padrão */
+QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do frame */
+QFrame {
+    background-color: #ffaaff; /* Preto */
+}
+
+
+
+</string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>164</width>
+               <height>522</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <attribute name="label">
+              <string>Página 1</string>
+             </attribute>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="text">
+                 <string>Página Inicial</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="text">
+                 <string>Categorias</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string>Conta do Usuário</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="text">
+                 <string>Suporte ao Cliente</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>164</width>
+               <height>522</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Pagina 2</string>
+             </attribute>
+             <widget class="QTextEdit" name="textEdit">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>141</width>
+                <height>231</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QTextEdit {
+    background-color: #ff55ff; /* Cinza escuro */
+    color: white; /* Texto em branco */
+    border-radius: 5px; /* Borda arredondada */
+}</string>
+              </property>
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;Usuário&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;: Moda &amp;amp; Estilo&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;Sistema&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;: Website&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;Status&lt;/span&gt;&lt;span style=&quot; font-size:10pt; color:#ffffff;&quot;&gt;: Ativo&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; color:#ffffff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="main_container">
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="top_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item alignment="Qt::AlignLeft">
+           <widget class="QPushButton" name="btn_toggle">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="../Downloads/templogo_.qrc">
+              <normaloff>:/icons/templogo/botone.png</normaloff>:/icons/templogo/botone.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">QFrame {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor quando o mouse estiver em cima do QFrame */
+QFrame:hover {
+    background-color: black;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QFrame */
+QFrame QLabel {
+    color: black;
+    padding: 5px 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Página de Website&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="main_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 170, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QStackedWidget" name="Pages">
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 170, 255);</string>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="pg_inicial">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="logo">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 170, 255);</string>
+                </property>
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/templogo/80040.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_conta">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 170, 255);</string>
+             </property>
+             <layout class="QFormLayout" name="formLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;USUÁRIO&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;/&gt;&lt;img src=&quot;:/icons/templogo/17797.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLineEdit" name="lineEdit_6">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}</string>
+                </property>
+                <property name="text">
+                 <string>Pedro</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="lineEdit_7">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}background-color: rgb(230, 207, 204);</string>
+                </property>
+                <property name="text">
+                 <string>*********</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_3">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}background-color: rgb(230, 207, 204);</string>
+                </property>
+                <property name="placeholderText">
+                 <string>TELEFONE:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_5">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}</string>
+                </property>
+                <property name="placeholderText">
+                 <string>E-MAIL:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_9">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}</string>
+                </property>
+                <property name="placeholderText">
+                 <string>SEXO:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_8">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}</string>
+                </property>
+                <property name="placeholderText">
+                 <string>CPF:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0" colspan="2">
+               <widget class="QLineEdit" name="lineEdit_4">
+                <property name="styleSheet">
+                 <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}background-color: rgb(230, 207, 204);</string>
+                </property>
+                <property name="placeholderText">
+                 <string>ENDEREÇO:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0">
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do frame */
+QFrame {
+    background-color: #333333; /* Preto */
+}
+
+</string>
+                </property>
+                <property name="text">
+                 <string>Editar</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_categorias">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="contextMenuPolicy">
+                 <enum>Qt::CustomContextMenu</enum>
+                </property>
+                <property name="whatsThis">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="tab">
+                 <property name="styleSheet">
+                  <string notr="true">/* Define a cor dos botões */
+QTabWidget::tab {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QTabWidget::tab:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do botão ativo */
+QTabWidget::tab:selected {
+    background-color: white;
+    color: #ff55ff; /* Azul */
+}
+
+/* Define a cor do texto dentro dos botões */
+QTabWidget::tab::disabled {
+    color: gray;
+}</string>
+                 </property>
+                 <attribute name="title">
+                  <string>Categorias</string>
+                 </attribute>
+                 <widget class="QFrame" name="frame_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>19</x>
+                    <y>29</y>
+                    <width>621</width>
+                    <height>381</height>
+                   </rect>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label_7">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(238, 213, 210);
+background-color: rgb(255, 170, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#ffffff;&quot;&gt;CATEGORIAS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLineEdit" name="lineEdit">
+                     <property name="styleSheet">
+                      <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>ROUPAS</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string>ROUPAS</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLineEdit" name="lineEdit_2">
+                     <property name="styleSheet">
+                      <string notr="true">/* Define a cor de fundo e a borda do QLineEdit */
+QLineEdit {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+    padding: 5px 10px;
+    color: white;
+}
+
+/* Define a cor quando o mouse estiver em cima do QLineEdit */
+QLineEdit:hover {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QLineEdit */
+QLineEdit:focus {
+    background-color: white;
+    border: 1px solid #1e90ff; /* Azul */
+    color: #1e90ff; /* Azul */
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>ACESSÓRIOS</string>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignCenter</set>
+                     </property>
+                     <property name="placeholderText">
+                      <string>ACESSÓRIOS</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+                <widget class="QWidget" name="tab_2">
+                 <attribute name="title">
+                  <string>Roupas</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="styleSheet">
+                     <string notr="true">QFrame {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor quando o mouse estiver em cima do QFrame */
+QFrame:hover {
+    background-color: black;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QFrame */
+QFrame QLabel {
+    color: black;
+    padding: 5px 10px;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#ffffff;&quot;&gt;ROUPAS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget">
+                      <property name="styleSheet">
+                       <string notr="true">/* Define a cor das células */
+QTableView {
+    background-color: white;
+    color: black;
+    selection-background-color: #ff55ff;
+    selection-color: white;
+    gridline-color: #cccccc;
+}
+
+/* Define o estilo das linhas */
+QTableView::item {
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Define o estilo das colunas */
+QHeaderView::section {
+    background-color: #ff55ff;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-right: 1px solid #cccccc;
+}
+
+/* Define a cor de fundo dos headers quando selecionados */
+QHeaderView::section:selected {
+    background-color: white;
+    color: #ff55ff;
+    border: 1px solid #ff55ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a borda inferior nos headers */
+QHeaderView::section:bottom {
+    border-bottom: 1px solid #cccccc;
+}
+{
+table.setCornerWidget(None)
+}
+
+</string>
+                      </property>
+                      <row>
+                       <property name="text">
+                        <string>coluna teste</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>teste 2</string>
+                       </property>
+                      </row>
+                      <column>
+                       <property name="text">
+                        <string>Cor</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Marca</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Tamanho</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Preço</string>
+                       </property>
+                      </column>
+                      <item row="0" column="0">
+                       <property name="text">
+                        <string>a</string>
+                       </property>
+                      </item>
+                      <item row="0" column="1">
+                       <property name="text">
+                        <string>b</string>
+                       </property>
+                      </item>
+                      <item row="0" column="2">
+                       <property name="text">
+                        <string>c</string>
+                       </property>
+                      </item>
+                      <item row="0" column="3">
+                       <property name="text">
+                        <string>d</string>
+                       </property>
+                      </item>
+                      <item row="1" column="0">
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                      <item row="1" column="1">
+                       <property name="text">
+                        <string>2</string>
+                       </property>
+                      </item>
+                      <item row="1" column="2">
+                       <property name="text">
+                        <string>3</string>
+                       </property>
+                      </item>
+                      <item row="1" column="3">
+                       <property name="text">
+                        <string>4</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_3">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_9">
+                       <item>
+                        <widget class="QPushButton" name="btn_adicionar">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Adicionar</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_excluir">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Excluir</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_pesquisar">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Pesquisar</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_2">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="title">
+                  <string>Acessórios</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_6">
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="styleSheet">
+                     <string notr="true">QFrame {
+    background-color: #ff55ff; /* Azul */
+    border-radius: 5px;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor quando o mouse estiver em cima do QFrame */
+QFrame:hover {
+    background-color: black;
+    border: 1px solid #1e90ff; /* Azul */
+}
+
+/* Define a cor do texto dentro do QFrame */
+QFrame QLabel {
+    color: black;
+    padding: 5px 10px;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600; color:#ffffff;&quot;&gt;ACESSÓRIOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <item>
+                     <widget class="QTableWidget" name="tableWidget_3">
+                      <property name="styleSheet">
+                       <string notr="true">/* Define a cor das células */
+QTableView {
+    background-color: white;
+    color: black;
+    selection-background-color: #ff55ff;
+    selection-color: white;
+    gridline-color: #cccccc;
+}
+
+/* Define o estilo das linhas */
+QTableView::item {
+    border-bottom: 1px solid #cccccc;
+}
+
+/* Define o estilo das colunas */
+QHeaderView::section {
+    background-color: #ff55ff;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border-right: 1px solid #cccccc;
+}
+
+/* Define a cor de fundo dos headers quando selecionados */
+QHeaderView::section:selected {
+    background-color: black;
+    color: #ff55ff;
+    border: 1px solid #ff55ff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a borda inferior nos headers */
+QHeaderView::section:bottom {
+    border-bottom: 1px solid #cccccc;
+}
+{
+table.setCornerWidget(None)
+}
+
+</string>
+                      </property>
+                      <row>
+                       <property name="text">
+                        <string>teste1</string>
+                       </property>
+                      </row>
+                      <row>
+                       <property name="text">
+                        <string>teste2</string>
+                       </property>
+                      </row>
+                      <column>
+                       <property name="text">
+                        <string>Material</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Tipo</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Tamanho</string>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Preço</string>
+                       </property>
+                      </column>
+                      <item row="0" column="0">
+                       <property name="text">
+                        <string>1</string>
+                       </property>
+                      </item>
+                      <item row="0" column="1">
+                       <property name="text">
+                        <string>2</string>
+                       </property>
+                      </item>
+                      <item row="0" column="2">
+                       <property name="text">
+                        <string>3</string>
+                       </property>
+                      </item>
+                      <item row="0" column="3">
+                       <property name="text">
+                        <string>4</string>
+                       </property>
+                      </item>
+                      <item row="1" column="0">
+                       <property name="text">
+                        <string>fi</string>
+                       </property>
+                      </item>
+                      <item row="1" column="1">
+                       <property name="text">
+                        <string>bo</string>
+                       </property>
+                      </item>
+                      <item row="1" column="2">
+                       <property name="text">
+                        <string>na</string>
+                       </property>
+                      </item>
+                      <item row="1" column="3">
+                       <property name="text">
+                        <string>cci</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_5">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 170, 255);</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_13">
+                       <item>
+                        <widget class="QPushButton" name="btn_adicionar_3">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Adicionar</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_excluir_3">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Excluir</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_pesquisar_3">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton {
+    background-color: #ff55ff; /* Azul */
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Define a cor quando o mouse estiver em cima do botão */
+QPushButton:hover {
+    background-color: white;
+    color: #1e90ff; /* Azul */
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Pesquisar</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_4">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="pg_suporte">
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>140</x>
+                <y>220</y>
+                <width>361</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/templogo/tel.png&quot;/&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;(71)2871-23728&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>100</y>
+                <width>321</width>
+                <height>111</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/templogo/chat.png&quot;/&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;(71) 98323-73454&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>180</x>
+                <y>320</y>
+                <width>401</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/icons/templogo/mail.png&quot;/&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;MODA&amp;amp;ESTILO@HOTMAIL.COM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>130</x>
+                <y>10</y>
+                <width>511</width>
+                <height>91</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:600;&quot;&gt;SUPORTE AO CLIENTE/CONTATOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="footer_frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Moda&amp;Estilo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Downloads/templogo_.qrc"/>
+ </resources>
+ <connections/>
+</ui>
